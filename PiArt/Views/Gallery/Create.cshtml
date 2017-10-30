@@ -1,0 +1,146 @@
+﻿@model PiArt.Models.GalleryViewModel
+
+@{
+    ViewBag.Title = "Post Your Gallery For Rent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Your Gallery For Rent 
+  
+    </h2>
+<script src= @Url.Content("~/Scripts/jquery-1.10.2.js")></script>
+
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 36.862499, lng: 10.195556 },
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+
+
+    }
+   
+    $(document).ready(function () {
+        $("#k").click(function () {
+            var map;
+           
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 36.862499, lng: 10.195556 },
+                    zoom: 8,
+                    mapTypeId: google.maps.MapTypeId.TERRAIN
+                });
+
+
+            
+            var geocoder;
+        geocoder = new google.maps.Geocoder();
+            var address = document.getElementById('Address').value;
+            
+            geocoder.geocode( { 'address': address}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location,
+                       
+                    });
+                }
+             //   alert(marker.getPosition().lat());
+             
+                    document.getElementById('lat').value = marker.getPosition().lat();
+                    document.getElementById('lng').value = marker.getPosition().lng();
+               //     alert(marker.getPosition().lat());
+                
+            });
+        })
+
+    })
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0lGurDaolJ4wzpaDkKNjWst84beoHRyw&callback=initMap"
+        type="text/javascript">
+</script>
+
+@using (Html.BeginForm("Create", "Gallery", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal">
+        <h4>Localisation</h4>
+        <hr />
+    </div>
+   
+    <div class="form-group">
+        @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2 label" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control ", @style = "width:500px" } })
+            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div style="margin-left:400px ">
+        <input type="button" value="Locate" id="k" class="button" style="width:100px"/ >
+    </div>
+            <div id="map" style="height: 600px; width: 900px ; margin-left: 250px" >
+            
+        </div>
+            
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div style="margin:500px ; margin-top:10px">
+
+        <div class="form-group" style="font-size:x-large">
+            More Details
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control ", @style = "width:500px" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group" style="font-size:x-large">
+          Price Per Day (dt)
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @style = "width:500px" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group" style="font-size:x-large">
+            @Html.LabelFor(model => model.lat, htmlAttributes: new { @class = "control-label col-md-2 label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.lat, new { htmlAttributes = new { @class = "form-control", @style = "width:500px" } })
+                @Html.ValidationMessageFor(model => model.lat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.lng, htmlAttributes: new { @class = "control-label col-md-2 label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.lng, new { htmlAttributes = new { @class = "form-control", @style = "width:500px" } })
+                @Html.ValidationMessageFor(model => model.lng, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group" style="font-size:x-large">
+           A Picture of Your Gallery
+            <div class="col-md-10">
+                @Html.TextBox("Image1", null, new { type = "file" })
+                @Html.ValidationMessageFor(model => model.ImageUrl)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="button" />
+               
+            </div>
+        </div>
+    </div>
+}
+
+<div class="button">
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

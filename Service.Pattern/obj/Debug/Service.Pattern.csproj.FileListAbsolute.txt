@@ -1,0 +1,11 @@
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\Service.Pattern.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\Service.Pattern.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\PiArt.Data.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\EntityFramework.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\PiArt.Domain.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\PiArt.Data.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\EntityFramework.xml
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\bin\Debug\PiArt.Domain.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\obj\Debug\Service.Pattern.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\Service.Pattern\obj\Debug\Service.Pattern.pdb

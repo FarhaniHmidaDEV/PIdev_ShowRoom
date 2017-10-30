@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PiArt.Models.GalleryViewModel>
+@{
+    ViewBag.Title = "LatLng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script>
+@Model  List<GalleryViewModel>
+           
+
+    @foreach (var item in Model)
+    {
+        
+        <span>@item.Address</span>
+        <span>@item.lat  
+     </span>
+
+        <span>@item.lng</span>
+    }
+                
+   
+    function initMap() {
+    
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 36.862499, lng: 10.195556 },
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+        var markers = [
+       ['London Eye, London', 51.503454,-0.119562],
+       ['Palace of Westminster, London', 51.499633,-0.124755]
+        for (i = 0; i < markers.length; i++) {
+            var data = markers[i]
+         
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+              
+    }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0lGurDaolJ4wzpaDkKNjWst84beoHRyw&callback=initMap"
+                        type="text/javascript">
+                </script>
+                <div id="map" style="height: 600px; width: 900px">
+                </div>
+

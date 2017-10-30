@@ -1,0 +1,16 @@
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Service.dll.config
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Service.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Service.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\EntityFramework.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Data.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Domain.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\Service.Pattern.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Data.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\PiArt.Domain.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\Service.Pattern.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\EntityFramework.xml
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\obj\Debug\PiArt.Service.csprojResolveAssemblyReference.cache
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\obj\Debug\PiArt.Service.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Service\obj\Debug\PiArt.Service.pdb

@@ -1,0 +1,51 @@
+﻿@model PiArt.Models.RentViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+
+    <hr />
+    <table>
+        <tr>
+            <th>
+                star date ! 
+            </th>
+            <th>
+               end date
+            </th>
+            <th>
+                descp rent 
+            </th>
+      </tr>
+        <tr>
+        
+
+        <td>
+            @Html.DisplayFor(model => model.StartDate)
+        </td>
+
+      
+
+        <td>
+            @Html.DisplayFor(model => model.EndDate)
+        </td>
+
+
+            <td>
+                @Html.DisplayFor(model => model.DescriptionRent)
+            </td>
+        </tr>
+
+
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentId  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

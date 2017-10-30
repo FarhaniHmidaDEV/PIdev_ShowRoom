@@ -1,0 +1,85 @@
+﻿@model PiArt.Domain.Entities.Gallery
+
+@{
+    ViewBag.Title = "BestGallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BestGallery</h2>
+
+<div>
+    <h4>Gallery</h4>
+    <hr />
+    
+    <dl class="dl-horizontal">
+        <table>
+            <tr>
+                <th>
+                Address     
+                </th>
+                <th>
+                    Price 
+                </th>
+                
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Price)
+                </td>
+                
+            </tr>
+        </table>
+                @*<dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+            
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lng)
+        </dd>
+
+      
+
+     
+
+    </dl>*@
+    
+</div>
+<p class="button">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GalleryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

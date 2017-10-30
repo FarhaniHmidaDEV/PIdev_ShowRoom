@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiArt", "PiArt\PiArt.csproj", "{3B6B374F-5240-4156-A13B-1CF067E0774E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiArt.Data", "PiArt.Data\PiArt.Data.csproj", "{2952F6D8-56E2-4244-89C4-20890FBC2745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiArt.Domain", "PiArt.Domain\PiArt.Domain.csproj", "{BAFC73B9-8B00-4253-A4FC-477D268019FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiArt.Service", "PiArt.Service\PiArt.Service.csproj", "{4F9902A0-476E-4E84-BACA-19D95B857CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Pattern", "Service.Pattern\Service.Pattern.csproj", "{B2389A57-5FDD-4CB6-8D87-2EE7DB1D91C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B6B374F-5240-4156-A13B-1CF067E0774E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6B374F-5240-4156-A13B-1CF067E0774E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6B374F-5240-4156-A13B-1CF067E0774E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6B374F-5240-4156-A13B-1CF067E0774E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2952F6D8-56E2-4244-89C4-20890FBC2745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2952F6D8-56E2-4244-89C4-20890FBC2745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2952F6D8-56E2-4244-89C4-20890FBC2745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2952F6D8-56E2-4244-89C4-20890FBC2745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFC73B9-8B00-4253-A4FC-477D268019FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFC73B9-8B00-4253-A4FC-477D268019FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFC73B9-8B00-4253-A4FC-477D268019FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFC73B9-8B00-4253-A4FC-477D268019FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9902A0-476E-4E84-BACA-19D95B857CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9902A0-476E-4E84-BACA-19D95B857CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9902A0-476E-4E84-BACA-19D95B857CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9902A0-476E-4E84-BACA-19D95B857CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2389A57-5FDD-4CB6-8D87-2EE7DB1D91C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2389A57-5FDD-4CB6-8D87-2EE7DB1D91C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2389A57-5FDD-4CB6-8D87-2EE7DB1D91C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2389A57-5FDD-4CB6-8D87-2EE7DB1D91C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

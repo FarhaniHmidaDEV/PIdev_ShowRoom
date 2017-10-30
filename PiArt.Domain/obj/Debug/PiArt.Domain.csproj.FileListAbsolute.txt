@@ -1,0 +1,10 @@
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\PiArt.Domain.dll.config
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\PiArt.Domain.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\PiArt.Domain.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\EntityFramework.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\EntityFramework.xml
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\obj\Debug\PiArt.Domain.dll
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\obj\Debug\PiArt.Domain.pdb
+C:\Users\SALMA\Documents\Visual Studio 2015\Projects\PiArt\PiArt.Domain\obj\Debug\PiArt.Domain.csprojResolveAssemblyReference.cache

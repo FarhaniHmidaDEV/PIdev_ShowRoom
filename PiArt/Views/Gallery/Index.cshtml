@@ -1,0 +1,87 @@
+﻿@model IEnumerable<PiArt.Models.GalleryViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2></h2>
+
+
+
+<p class="button">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<input type="button" value="Sort By Price " class="button" onclick="location.href='@Url.Action("IndexSort", "Gallery")'"   />
+<form asp-controller="Gallery" asp-action="Index">
+    <p style="margin:40px">
+        Title: <input type="text" name="SearchString">
+        <input type="submit" value="Filter" />
+    </p>
+
+</form>
+
+<table class="table">
+    <tr>
+        <th >
+            @Html.DisplayNameFor(model => model.ImageUrl)
+
+        </th>
+       
+        <th>
+          Rent Details
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lng)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @*recuperer l'image*@
+                @{string path = "~/Content/Upload/" + @item.ImageUrl;}
+
+                @*enlever label for pour afficher seulement l'image*@
+
+                <img src="@Url.Content(path)" width="50" height="50" id="Ima" />
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lng)
+            </td>
+            <td >
+
+                @Html.ActionLink("Edit", "Edit", new { id = item.GalleryId })  |
+                @Html.ActionLink("Details", "Details", new { id = item.GalleryId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.GalleryId })
+            </td>
+        </tr>
+                    }
+
+
+</table>
